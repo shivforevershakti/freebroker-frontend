@@ -3,6 +3,7 @@ import React from 'react';
 import ErrorPage from './error//ErrorPage';
 import ErrorBoundary from './error/ErrorBoundary';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Navbar from './components/Navbar';
 
 
 const App =()=> {
@@ -11,6 +12,7 @@ const App =()=> {
             path: "",
             element: (
                 <ErrorBoundary>
+                     <Navbar />
                     <div>Hello</div>
                 </ErrorBoundary>
             ),
